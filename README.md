@@ -15,8 +15,8 @@ TBA
 TBA
 
 ## How to Use
-1. git clone repo
-2. cd into app
-3. npm install
-4. ```run react-native run-ios``` or ```run react-native run-android```
+1. ```git clone``` repo
+2. ```cd``` into app
+3. ```npm install```
+4. run ```react-native run-ios``` or  ```react-native run-android```
 5. Enjoy!!
