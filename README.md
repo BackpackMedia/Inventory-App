@@ -12,7 +12,7 @@ TBA
 * cleaner way to organize files
 
 ## Tutorial
-TBA
+[On Medium](https://medium.com/@keheira/firebase-react-native-building-an-inventory-app-baea00b3d629)
 
 ## How to Use
 1. ```git clone``` repo
