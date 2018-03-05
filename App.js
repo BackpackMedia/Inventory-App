@@ -1,19 +1,28 @@
 import React from 'react';
+import { Button } from 'react-native'
 import { StackNavigator } from 'react-navigation';
-import ItemList from './components/screens/ItemList';
-import AddItem from './components/screens/AddItem';
+import ItemList from './src/screens/ItemList';
+import AddItem from './src/screens/AddItem';
 
-const Navigation = StackNavigator({
+const Navigation = StackNavigator(
+  {
     Home: { screen: ItemList,
       navigationOptions: ({navigation}) => ({
-        title: "Inventory App"
+        title: "Inventory App",
+        headerRight: (
+          <Button onPress={() => navigation.navigate('Add')} title="Add"/>
+        )
       }),
     },
     Add: { screen: AddItem,
       navigationOptions: ({navigation}) => ({
-        title: 'Add Item'
+        title: 'Item Info'
       }),
-    }
-})
+    },
+  },
+  {
+    initialRouteName: 'Home'
+  }
+)
 
 export default Navigation;

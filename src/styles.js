@@ -27,14 +27,14 @@ var styles = StyleSheet.create({
   },
   liTitle: {
     color: '#333',
-    fontSize: 16
+    fontSize: 20
   },
   liDescription: {
     color: '#333',
     fontSize: 12
   },
   liQty: {
-    color: '#333',
+    color: '#FF0000',
     fontSize: 10
   },
   center: {
@@ -60,8 +60,31 @@ var styles = StyleSheet.create({
     marginBottom: 10,
     padding: 10
   },
+  textView:{
+    flexDirection: 'row',
+    paddingBottom: 10
+  },
   addItemTitle: {
     fontSize: 30
+  },
+  itemInput: {
+    height: 40,
+    width: 300,
+    borderWidth: 2,
+    backgroundColor: 'white'
+  },
+  descriptionInput: {
+    height: 40,
+    width: 210,
+    borderWidth: 2,
+    backgroundColor: 'white'
+  },
+  picker: {
+    height: 88,
+    marginBottom:55
+  },
+  pickerItem: {
+    height: 88
   }
 });
 
