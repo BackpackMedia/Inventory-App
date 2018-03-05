@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {View, ListView, Alert, AlertIOS} from 'react-native';
-import ListItem from '../ListItem';
-import Button from '../Button';
-const styles = require('../../styles.js');
+import ListItem from '../components/ListItem';
+import Button from '../components/Button';
+const styles = require('../styles.js');
 const firebaseApp = require('../Config/FirebaseConfig');
 
 class ItemList extends Component {
@@ -64,7 +64,6 @@ class ItemList extends Component {
                 renderRow={this.renderItem.bind(this)}
                 enableEmptySections={true}
                 style={styles.listview}/>
-                <Button title="Add Item" onPress={() => navigate('Add')} />
             </View>
         )
     }
